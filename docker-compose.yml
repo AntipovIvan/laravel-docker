@@ -17,6 +17,8 @@ services:
       - ./storage:/var/www/storage
     networks:
       - app-network
+    links:
+      - database
 
   # MySQL Service
   database:
@@ -33,6 +35,19 @@ services:
       MYSQL_USER: user
     networks:
       - app-network
+
+  # phpmyadmin:
+  #   image: phpmyadmin/phpmyadmin
+  #   container_name: phpmyadmin
+  #   restart: unless-stopped
+  #   ports:
+  #     - "8080:80"
+  #   environment:
+  #     PMA_HOST: database
+  #     PMA_USER: root
+  #     PMA_PASSWORD: root_password
+  #   links:
+  #     - database
 
   # Nginx Service
   webserver:
