@@ -30,9 +30,10 @@ services:
       - "4306:3306"
     environment:
       MYSQL_DATABASE: laravel
-      MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_PASSWORD: password
-      MYSQL_USER: user
+      # MYSQL_ALLOW_EMPTY_PASSWORD: true
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      # MYSQL_PASSWORD: ${DB_PASSWORD}
+      # MYSQL_USER: ${DB_USERNAME}
     networks:
       - app-network
 
