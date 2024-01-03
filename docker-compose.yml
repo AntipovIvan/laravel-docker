@@ -30,25 +30,9 @@ services:
       - "4306:3306"
     environment:
       MYSQL_DATABASE: laravel
-      # MYSQL_ALLOW_EMPTY_PASSWORD: true
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
-      # MYSQL_PASSWORD: ${DB_PASSWORD}
-      # MYSQL_USER: ${DB_USERNAME}
     networks:
       - app-network
-
-  # phpmyadmin:
-  #   image: phpmyadmin/phpmyadmin
-  #   container_name: phpmyadmin
-  #   restart: unless-stopped
-  #   ports:
-  #     - "8080:80"
-  #   environment:
-  #     PMA_HOST: database
-  #     PMA_USER: root
-  #     PMA_PASSWORD: root_password
-  #   links:
-  #     - database
 
   # Nginx Service
   webserver:

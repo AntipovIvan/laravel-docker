@@ -11,7 +11,12 @@ Commands and instructions
 - **Rollback by using migrations AND seed: php artisan migrate:refresh --seed**
 - **Make model: php artisan make:model ModelName**
 - **Make model: php artisan make:factory FactoryName**
+- **Make controller: php artisan make:controller ControllerName**
+- **Copy to vendor folder: php artisan vendor:publish**
+- **Link storage (images, etc): php artisan storage:link**
 - **[Simple MYSQL user cheatsheet](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3)**
+- **If error to storage/laravel.log: chmod 777 storage/ -R**
+
 
 <!-- ## Contributing
 
