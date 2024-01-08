@@ -14,6 +14,8 @@ Commands and instructions
 - **Make controller: php artisan make:controller ControllerName**
 - **Copy to vendor folder: php artisan vendor:publish**
 - **Link storage (images, etc): php artisan storage:link**
+- **Use Tinker: php artisan tinker**
+- **When in Tinker mode: \App\Models\Listing::find(3)->user**
 - **[Simple MYSQL user cheatsheet](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3)**
 - **If error to storage/laravel.log: chmod 777 storage/ -R**
 
